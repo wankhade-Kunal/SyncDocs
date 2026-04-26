@@ -1,0 +1,53 @@
+.collaborator-avatars {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-stack {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--bg-secondary);
+  background-color: var(--bg-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar:not(:first-child) {
+  margin-left: -8px;
+}
+
+.avatar-count {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--bg-surface);
+  border: 2px solid var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-left: -8px;
+}
